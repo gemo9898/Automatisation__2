@@ -12,6 +12,6 @@ Comme pour la semaine dernière, utiliser les principes gitflow pour ce projet, 
 - [ ] Deplacer le js et css dans un dossiers `assets` à la racine du projet, et les build dans un dossier `./public/build` grâce à vite
 
 ### Bonus
-- [ ] Ajouter des git hooks pour lancer phpcs, phpstan et eslint avant chaque commit et/ou push
+- [X] Ajouter des git hooks pour lancer phpcs, phpstan et eslint avant chaque commit et/ou push
 - [ ] Utiliser la version serveur de vite pour le développement
 - [ ] Changer le liens des assets dans twig en fonction de la variable d'environnement `APP_ENV` (dev ou prod)
