@@ -27,6 +27,10 @@
 
 {% block scripts %}
 	<script src="/assets/script.js"></script>
+	
+<script type="module" src="http://localhost:3000/build/@vite/client"></script>
+<script type="module" src="http://localhost:3000/build/{{ manifest['index.js'] }}"></script>
 {% endblock %}
 </body>
+
 </html>

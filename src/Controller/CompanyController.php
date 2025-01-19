@@ -11,13 +11,16 @@ class CompanyController extends DefaultController
 {
     public function index(ServerRequestInterface $request, ResponseInterface $response, $args): ResponseInterface
     {
-        $company = Company::find($args['id']);
+        $companyModel = new Company();
+        $company = $companyModel->find($args['id']);
         if ($company === null) {
             throw new HttpNotFoundException($request);
         }
 
-        return $this->twig->render($response, 'company/index.twig', [
+        return $this->twig->render(
+            $response, 'company/index.twig', [
             'company' => $company,
-        ]);
+            ]
+        );
     }
 }
